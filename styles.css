@@ -1,0 +1,356 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+  /*CSS Reset*/
+  
+  /**{border: 1px solid blue;}*/
+  
+  :root {
+      --dark-teal: #2F4F53;
+      --main-teal: #56929A;
+      --main-aqua: #71BAC4;
+  }
+  
+  body{
+  color: #2F4F53;
+  font-family: "IBM Plex Sans Hebrew";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem; /* 200% */
+  }
+  
+  h1{
+  color: #FFF;
+  font-family: Jura;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  }
+  
+  h2{
+  color: #2F4F53;
+  font-family: Jura;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  }
+  
+  h3{
+  color: #FFF;
+  font-family: Jura;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  }
+  
+  /*Nav-bar*/
+  #navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 3rem;
+    background: #347B45;
+    color: white;
+  }
+  
+  #nav-list{
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 2rem;
+      align-items: center;
+  }
+  
+  #nav-list a {
+    margin: 0.5rem;
+    text-decoration: none;
+    color: white;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .spacer{
+    min-height: 10rem;
+  }
+  
+  
+  
+  /*Welcome-Section*/
+  #welcome-section{
+  background: linear-gradient(180deg,
+  var(--dark-teal),
+  var(--main-teal)
+  );
+  width: 100vw;
+  }
+  .welcome-text{
+    width: 66vw;
+    margin: auto;
+  }
+  
+  #welcome-header{
+    padding-bottom: 50vh;
+  }
+  
+  .welcome-letters{
+    margin-top: 3rem; 
+  }
+  
+  #fl1{
+    margin-left: 0%;
+  }
+  
+  #fl2{
+    margin-left: 10%;
+  }
+  
+  #fl3{
+    margin-left: 20%;
+  }
+  
+  #fl4{
+    margin-left: 30%;
+  }
+  
+  #fl5{
+    margin-left: 40%;
+  }
+  
+  #fl6{
+    margin-left: 70%;
+  }
+  
+  #fl7{
+    margin-left: 60%;
+  }
+  
+  #fl8{
+    margin-left: 0%;
+  }
+  
+  #fl9{
+    margin-left: 10%;
+  }
+  
+  #fl10{
+    margin-left: 20%;
+  }
+  
+  #fl11{
+    margin-left: 30%;
+  }
+  
+  #fl12{
+    margin-left: 70%;
+  }
+  
+  #fl13{
+    margin-left: 75%;
+  }
+  
+  .list-space{
+    margin: 10px 0 10px 0;
+  }
+  
+  .welcome-letters li{
+    margin-bottom: calc(150vh/20);
+  }
+  
+  ol{
+    list-style: none;
+  }
+  
+  /*Profile-Section*/
+  #profile-section{
+    background: var(--main-aqua);
+    
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  #profile{
+    width: 45vw;
+    margin: auto;
+    border: 20px solid var(--main-teal);
+    border-radius: 0 0 0.5rem 0.5rem;
+    border-top: none;
+    padding: 1rem;
+  }
+  
+  #profile-img{
+    background: red;
+    max-width: 200px;
+    max-height:300px;
+    margin: 0.5rem auto auto auto;
+  }
+  
+  #profile-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #profile-header img{
+    max-width: 25px;
+  }
+  
+  #profile-img img{
+    max-height: 300px;
+  }
+  
+  /*Projects-Section*/
+  #projects{
+    background: var(--main-aqua);
+    padding-top: 5rem;
+    width: 100vw;
+  }
+  
+  #project-wrapper{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .project-tile{
+    width: 34vw;
+    height: calc(34vw * 0.75);
+    margin: 1vw auto 0 auto;
+    border: 10px solid var(--main-teal);
+    border-radius: 0.5rem;
+  }
+  
+  .project-tile img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /*Reflection-Section*/
+  #reflection{
+    background: var(--main-aqua);
+    width: 100vw;
+    padding: 5rem;
+  }
+  
+  #reflection-wrapper{
+    width: 70vw;
+    margin: auto;
+    padding: 1rem;
+    border: 10px solid var(--main-teal);
+    border-radius: 0.5rem;
+  }
+  
+  .reflection text{
+    columns: 2;
+  }
+  
+  .ref-section{
+    margin-top: 1rem;
+  }
+  
+  #reflection-wrapper span{
+    font-weight: 700;
+  }
+  
+  /*Contact-Section*/
+  #contact{
+    background: var(--main-aqua);
+    width: 100vw;
+    padding-bottom: 5rem;
+  }
+  
+  #contact-wrapper{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .c-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 34.5vw;
+    margin-right: 0.4vw;
+    
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .c-line{
+    width: 85vw;
+    height: 0.1rem;
+    background: var(--dark-teal);
+    margin: 1rem 0 1rem 0;
+  }
+  
+  
+  /*Footer Section*/
+  footer{
+  width: 100vw;
+  background: var(--dark-teal);
+  padding: 20px;
+  color: white;
+  }
+  
+  footer span{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5rem 2rem 0 0;
+  }
+  
+  /*End Footer Section*/
+  
+  
+  
+  @media screen and (max-width: 550px) {
+    #project-wrapper{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  }
